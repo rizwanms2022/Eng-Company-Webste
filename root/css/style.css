@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#sitename{
+    background-color: rgb(9, 10, 35);
+    color: rgb(151, 151, 151);
+    margin: 0;
+    padding: 20px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 12px;
+    font-size: 1.42rem;
+}
+
+#logobar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    background-image: url('https://cdn.pixabay.com/photo/2021/01/17/13/09/gas-pump-5925098_1280.jpg');
+
+}
+
+
+#navbar { 
+    position: fixed;
+    top: 70vh;
+    z-index: 1000; /* Ensure the navbar is above other content */
+    transition: top 2s ease-in-out;
+    background-color: #00000081;
+    color: white;
+    text-align: center;
+    width: 100%;
+    z-index: 1000; /* Ensure the navbar is above other content */
+    height: auto;
+    padding: 23px 0;
+}
+#navbar.scrolled {
+    top: 0;
+}
+
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#navbar ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+#home,section {
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+.product {
+    display: inline-block;
+    margin: 20px;
+    text-align: left;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+@media (max-width: 800px) {
+    #sitename{
+        font-size: 0.7rem;
+        letter-spacing: 2px;
+        justify-content: start;
+        padding: 8px;
+        padding-top: 25px;
+    }
+}
